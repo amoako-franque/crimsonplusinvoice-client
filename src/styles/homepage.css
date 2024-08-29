@@ -1,0 +1,101 @@
+.main-bg-image {
+  background-attachment: scroll;
+  background-color: initial;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0,
+      rgba(0, 0, 0, 0.7) 75%,
+      #000 100%),
+    url("../images/usb-tech.jpg");
+  background-position: center center;
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+}
+
+.business {
+  color: beige;
+  font-weight: bold;
+  font-family: 'Roboto Mono';
+  font-size: 4rem;
+  text-shadow: -15px 5px 20px #ced0d3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #F9f1cc;
+  text-shadow: 5px 5px 0px #FFB650,
+    10px 10px 0px #FFD662,
+    15px 15px 0px #FF80BF,
+}
+
+.businessI {
+  color: rgb(208, 236, 212);
+  font-weight: bold;
+
+  font-family: 'Roboto Mono';
+  font-size: 4rem;
+  text-shadow: -15px 5px 20px #ced0d3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-shadow: 5px 5px 0px #FFB650,
+    10px 10px 0px #FFD662,
+    15px 15px 0px #FF80BF,
+}
+
+.businessQ {
+  color: rgb(179, 179, 25);
+  font-weight: bold;
+
+  font-family: 'Roboto Mono';
+  font-size: 4rem;
+  text-shadow: -15px 5px 20px #ced0d3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-shadow: 5px 5px 0px #FFB650,
+    10px 10px 0px #FFD662,
+    15px 15px 0px #FF80BF,
+}
+
+
+.masthead {
+  box-sizing: border-box;
+  color: #212529;
+  font-family: Nunito, -apple-system, "system-ui", "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  height: 100vh;
+  letter-spacing: 1px;
+  line-height: 24px;
+  min-height: 35rem;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.homepage-header {
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-color: initial;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0));
+  box-sizing: border-box;
+  color: #212529;
+  font-size: 5rem;
+  font-weight: 500;
+  letter-spacing: 0.8rem;
+  line-height: 2.5rem;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-bg-image {
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+  }
+}
