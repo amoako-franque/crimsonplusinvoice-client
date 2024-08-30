@@ -9,7 +9,6 @@ import {
 } from "@mui/material"
 import { RiLoginCircleFill } from "react-icons/ri"
 import { Link as RouterLink } from "react-router-dom"
-import GoogleLogin from "../../../components/GoogleLogin"
 import StyledDivider from "../../../components/StyledDivider"
 import AuthWrapper from "../forms/AuthWrapper"
 import LoginForm from "../forms/LoginForm"

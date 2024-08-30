@@ -26,7 +26,7 @@ import { useLoginUserMutation } from "../authApiSlice"
 import { logIn } from "../authSlice"
 
 const LoginForm = () => {
-	useTitle("Access Account - Local Store Invoice")
+	useTitle("Access Account - Crimson Invoice Plus")
 
 	const navigate = useNavigate()
 	const dispatch = useDispatch()
@@ -74,7 +74,8 @@ const LoginForm = () => {
 						setStatus({ success: true })
 						setSubmitting(false)
 					} catch (err) {
-						const message = err.data.message
+						console.log(err)
+						const message = err.data?.message
 						toast.error(message)
 						setStatus({ success: false })
 						setSubmitting(false)

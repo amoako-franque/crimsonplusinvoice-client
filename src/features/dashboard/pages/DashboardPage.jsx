@@ -18,7 +18,7 @@ import PaymentHistory from "./components/paymentHistory"
 import useTitle from "../../../hooks/useTitle"
 
 const DashboardPage = () => {
-	useTitle("Local Store Invoice - My Dashboard")
+	useTitle("Crimson Invoice Plus - My Dashboard")
 	const { data: customers } = useGetAllUserCustomersQuery()
 	const { data: documents } = useGetAllMyDocsQuery()
 

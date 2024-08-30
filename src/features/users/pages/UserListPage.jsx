@@ -37,7 +37,7 @@ import {
 } from "../usersApiSlice"
 
 const UserListPage = () => {
-	useTitle(" Local Store Invoice - Registered users ")
+	useTitle(" Crimson Invoice Plus - Registered users ")
 
 	const [page, setPage] = useState(0)
 	const [rowsPerPage, setRowsPerPage] = useState(5)

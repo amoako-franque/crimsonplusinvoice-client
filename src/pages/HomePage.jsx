@@ -44,7 +44,7 @@ const HomePage = () => {
 								align="center"
 								sx={{ textTransform: "uppercase", mt: "13rem" }}
 								className="homepage-header">
-								Local Store Invoice
+								Crimson Invoice Plus
 							</StyledTypography>
 							<Typography
 								align="center"

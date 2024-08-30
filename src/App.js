@@ -32,7 +32,7 @@ import ViewDocumentPage from "./features/documents/pages/ViewDocumentPage"
 import DashboardPage from "./features/dashboard/pages/DashboardPage"
 
 const App = () => {
-	useTitle("Local Store Invoice App - Home")
+	useTitle("Crimson Invoice Plus App - Home")
 	const { user } = useSelector((state) => state.auth)
 
 	return (

@@ -4,7 +4,7 @@ function Copyright() {
 	return (
 		<Typography variant="body2" align="center" sx={{ color: "#ffffff" }}>
 			{"Copyright ©"}
-			<span color="inherit"> Local Store Invoice</span>{" "}
+			<span color="inherit"> Crimson Invoice Plus</span>{" "}
 			{new Date().getFullYear()} {"."}
 		</Typography>
 	)

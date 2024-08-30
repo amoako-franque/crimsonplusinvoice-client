@@ -39,9 +39,9 @@ const MenuList = () => {
 				<ListItem disablePadding>
 					<ListItemButton onClick={() => navigate("/profile")}>
 						<ListItemIcon>
-							<ManageAccountsIcon sx={{ fontSize: 40 }} color="green" />
+							<ManageAccountsIcon sx={{ fontSize: 40 }} color="blue" />
 						</ListItemIcon>
-						<ListItemText primary="Manage Profile" />
+						<ListItemText primary=" Profile" />
 					</ListItemButton>
 				</ListItem>
 			</StyledList>
@@ -51,7 +51,7 @@ const MenuList = () => {
 				<ListItem disablePadding>
 					<ListItemButton onClick={() => navigate("/dashboard")}>
 						<ListItemIcon>
-							<BarChartIcon sx={{ fontSize: 40 }} color="indigo" />
+							<BarChartIcon sx={{ fontSize: 40 }} color="blue" />
 						</ListItemIcon>
 						<ListItemText primary="Dashboard" />
 					</ListItemButton>
@@ -63,7 +63,7 @@ const MenuList = () => {
 				<ListItem disablePadding>
 					<ListItemButton onClick={() => navigate("/documents")}>
 						<ListItemIcon>
-							<PointOfSaleIcon sx={{ fontSize: 40 }} color="orange" />
+							<PointOfSaleIcon sx={{ fontSize: 40 }} color="blue" />
 						</ListItemIcon>
 						<ListItemText primary="Documents" />
 					</ListItemButton>

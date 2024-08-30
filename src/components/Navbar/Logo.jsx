@@ -28,7 +28,7 @@ const Logo = () => {
 					component={RouterLink}
 					to="/"
 					sx={{ textDecoration: "none", color: "white" }}>
-					Local Store Invoice
+					Crimson Invoice Plus
 				</Link>
 			</Typography>
 		</Stack>

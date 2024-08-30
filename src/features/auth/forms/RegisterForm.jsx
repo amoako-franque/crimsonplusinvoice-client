@@ -31,7 +31,7 @@ import useTitle from "../../../hooks/useTitle"
 const USERNAME_REGEX = /^[A-z][A-z0-9-_]{3,23}$/
 
 const RegisterForm = () => {
-	useTitle("Sign Up - Local Store Invoice")
+	useTitle("Sign Up - Crimson Invoice Plus")
 	const navigate = useNavigate()
 
 	const [level, setLevel] = useState()

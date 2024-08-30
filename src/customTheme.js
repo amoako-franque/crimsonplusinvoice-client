@@ -28,18 +28,17 @@ export const customTheme = createTheme({
 	components: {
 		MuiDrawer: {
 			styleOverrides: {
-				// Name of the slot
 				paper: {
-					// Some CSS
-					backgroundColor: "#222",
+					backgroundColor: "#123",
 					color: "#fff",
+					boxShadow: "10px 10px 10px black",
 				},
 			},
 		},
 		MuiAppBar: {
 			styleOverrides: {
 				root: {
-					backgroundColor: "#222",
+					backgroundColor: "#123",
 					color: "#888",
 				},
 			},

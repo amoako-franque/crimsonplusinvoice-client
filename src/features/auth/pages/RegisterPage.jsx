@@ -9,7 +9,6 @@ import {
 } from "@mui/material"
 import { FaUserCheck } from "react-icons/fa"
 import { Link } from "react-router-dom"
-import GoogleLogin from "../../../components/GoogleLogin"
 import StyledDivider from "../../../components/StyledDivider"
 import AuthWrapper from "../forms/AuthWrapper"
 import RegisterForm from "../forms/RegisterForm"

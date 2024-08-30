@@ -73,8 +73,8 @@ const ProfileInfo = ({ user }) => {
 				sx={{
 					p: 0.25,
 					bgColor: open ? "#E0E0E0" : "transparent",
-					borderRadius: 10,
-					"&:hover": { bgcolor: "#555a64" },
+					borderRadius: 8,
+					"&:hover": { bgcolor: "lightcyan", borderRadius: 3 },
 				}}
 				aria-label="open profile"
 				ref={anchorEl}

@@ -21,7 +21,7 @@ import useTitle from "../../../hooks/useTitle"
 import { useCreateCustomerMutation } from "../customersApiSlice"
 
 const AddCustomerForm = () => {
-	useTitle(" Local Store Invoice - Add Customer")
+	useTitle(" Crimson Invoice Plus - Add Customer")
 
 	const navigate = useNavigate()
 	const location = useLocation()

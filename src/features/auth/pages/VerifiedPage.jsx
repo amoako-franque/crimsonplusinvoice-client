@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 import useTitle from "../../../hooks/useTitle"
 
 const VerifiedPage = () => {
-	useTitle("Verify User - Local Store Invoice")
+	useTitle("Verify User - Crimson Invoice Plus")
 	return (
 		<Stack
 			direction="column"

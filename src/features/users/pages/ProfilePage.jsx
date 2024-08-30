@@ -57,7 +57,7 @@ function capitalizeFirstLetter(string) {
 }
 
 const ProfilePage = () => {
-	useTitle("Local Store Invoice - My Profile ")
+	useTitle("Crimson Invoice Plus - My Profile ")
 	const navigate = useNavigate()
 	const { data, error, isLoading, isError } = useGetUserProfileQuery()
 

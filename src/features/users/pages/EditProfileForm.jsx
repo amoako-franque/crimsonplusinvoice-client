@@ -41,7 +41,7 @@ const Input = styled("input")({
 })
 
 const EditProfileForm = () => {
-	useTitle("Local Store Invoice - Edit Profile ")
+	useTitle("Crimson Invoice Plus - Edit Profile ")
 	const navigate = useNavigate()
 	const goBack = () => navigate(-1)
 

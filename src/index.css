@@ -65,7 +65,7 @@ body {
 
 /* document styling */
 .title {
-  background-color: rgba(238, 235, 235, 0.954);
+  background-color: hsla(249, 47%, 70%, 0.954);
   border-bottom: 1px solid rgb(17, 65, 141);
   color: rgb(17, 65, 141);
   font-weight: 500;
