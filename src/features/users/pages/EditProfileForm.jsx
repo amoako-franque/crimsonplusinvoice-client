@@ -1,11 +1,6 @@
 import BrowserUpdatedIcon from "@mui/icons-material/BrowserUpdated"
 import CheckIcon from "@mui/icons-material/Check"
 import PhotoCamera from "@mui/icons-material/PhotoCamera"
-// import Card from "@mui/material/Card"
-// import CardContent from "@mui/material/CardContent"
-// import CardMedia from "@mui/material/CardMedia"
-// import Typography from "@mui/material/Typography"
-// import { CardActionArea } from "@mui/material"
 import {
 	Box,
 	Button,
@@ -34,7 +29,7 @@ import {
 	useUpdateUserProfileMutation,
 } from "../usersApiSlice"
 
-const baseUrl = "http://localhost:8900"
+const baseUrl = "http://localhost:4789"
 
 const Input = styled("input")({
 	display: "none",

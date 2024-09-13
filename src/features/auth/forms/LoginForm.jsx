@@ -74,8 +74,7 @@ const LoginForm = () => {
 						setStatus({ success: true })
 						setSubmitting(false)
 					} catch (err) {
-						console.log(err)
-						const message = err.data?.message
+						const message = err.data.message
 						toast.error(message)
 						setStatus({ success: false })
 						setSubmitting(false)

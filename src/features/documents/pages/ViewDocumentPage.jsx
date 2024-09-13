@@ -35,7 +35,7 @@ import { addCurrencyCommas } from "./components/addCurrencyCommas.jsx"
 import { statusColor } from "./components/styling.js"
 import PaymentForm from "./PaymentForm.jsx"
 
-const baseUrl = "http://localhost:8900/api/v1/"
+const baseUrl = "http://localhost:4789/api/v1/"
 
 const ViewDocumentPage = () => {
 	const { id } = useParams()
@@ -76,8 +76,6 @@ const ViewDocumentPage = () => {
 			.post(`${baseUrl}document/send-pdf`, {
 				profile,
 				document,
-				status,
-				totalAmountReceived,
 			})
 			.then(() => setSendEmail(false))
 			.catch((error) => {
@@ -250,6 +248,9 @@ const ViewDocumentPage = () => {
 										<b>From :</b>
 									</Typography>
 									<Typography variant="body1" gutterBottom>
+										<span className="text-sm font-bold text-gray-300 pr-2">
+											Business Name:
+										</span>
 										{profile?.businessName}
 									</Typography>
 									<Typography variant="body1" gutterBottom>
@@ -346,7 +347,7 @@ const ViewDocumentPage = () => {
 										gutterBottom
 										sx={{ color: "#2979ff" }}>
 										{document?.currency}{" "}
-										{addCurrencyCommas(document?.total.toFixed(2))}
+										{addCurrencyCommas(document?.total?.toFixed(2))}
 									</Typography>
 								</Box>
 							</Grid>
@@ -396,7 +397,7 @@ const ViewDocumentPage = () => {
 														}}
 														type="text"
 														name="name"
-														value={item.itemName}
+														value={item?.itemName}
 													/>
 												</StyledTableCell>
 
@@ -413,7 +414,7 @@ const ViewDocumentPage = () => {
 														}}
 														type="number"
 														name="quantity"
-														value={item.quantity}
+														value={item?.quantity}
 													/>
 												</StyledTableCell>
 
@@ -430,7 +431,7 @@ const ViewDocumentPage = () => {
 														}}
 														type="number"
 														name="unitPrice"
-														value={item.unitPrice}
+														value={item?.unitPrice}
 													/>
 												</StyledTableCell>
 
@@ -447,7 +448,7 @@ const ViewDocumentPage = () => {
 														}}
 														type="number"
 														name="discount"
-														value={item.discount}
+														value={item?.discount}
 													/>
 												</StyledTableCell>
 
@@ -465,10 +466,12 @@ const ViewDocumentPage = () => {
 														type="number"
 														name="amount"
 														value={(
-															item?.quantity * item.unitPrice -
-															(item.quantity * item.unitPrice * item.discount) /
+															item?.quantity * item?.unitPrice -
+															(item.quantity *
+																item?.unitPrice *
+																item?.discount) /
 																100
-														).toFixed(2)}
+														)?.toFixed(2)}
 													/>
 												</StyledTableCell>
 											</StyledTableRow>
@@ -492,7 +495,7 @@ const ViewDocumentPage = () => {
 								<h4>
 									{" "}
 									{document?.currency}{" "}
-									{addCurrencyCommas(document?.subTotal.toFixed(2))}
+									{addCurrencyCommas(document?.subTotal?.toFixed(2))}
 								</h4>
 							</Box>
 
@@ -500,7 +503,7 @@ const ViewDocumentPage = () => {
 								<Typography variant="subtitle1">
 									{`VAT/Sales Tax (${document?.rates}%):`}
 								</Typography>
-								<h4>{document?.salesTax.toFixed(2)}</h4>
+								<h4>{document?.salesTax?.toFixed(2)}</h4>
 							</Box>
 
 							<Box className="billItem">
@@ -508,7 +511,7 @@ const ViewDocumentPage = () => {
 								<h4>
 									{" "}
 									{document?.currency}{" "}
-									{addCurrencyCommas(document?.total.toFixed(2))}
+									{addCurrencyCommas(document?.total?.toFixed(2))}
 								</h4>
 							</Box>
 
@@ -517,7 +520,7 @@ const ViewDocumentPage = () => {
 								<h4>
 									{" "}
 									{document?.currency}{" "}
-									{addCurrencyCommas(totalAmountReceived.toFixed(2))}
+									{addCurrencyCommas(totalAmountReceived?.toFixed(2))}
 								</h4>
 							</Box>
 
@@ -527,7 +530,9 @@ const ViewDocumentPage = () => {
 									{" "}
 									{document?.currency}{" "}
 									{addCurrencyCommas(
-										Math.round(document?.total - totalAmountReceived).toFixed(2)
+										Math.round(document?.total - totalAmountReceived)?.toFixed(
+											2
+										)
 									)}
 								</h4>
 							</Box>
@@ -589,7 +594,7 @@ const ViewDocumentPage = () => {
 									padding: 1,
 								}}>
 								{`Record any payment by ${
-									document?.customer.name.split(" ")[0]
+									document?.customer?.name?.split(" ")[0]
 								}`}
 							</Typography>
 

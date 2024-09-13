@@ -19,8 +19,8 @@ const PaymentForm = ({ document }) => {
 	const paymentOptions = [
 		"Mobile Money",
 		"Cash",
+		"Cheque",
 		"Bank Transfer",
-		"PayPal",
 		"Credit Card",
 		"Others",
 	]
@@ -52,9 +52,11 @@ const PaymentForm = ({ document }) => {
 	const paymentHandler = async (e) => {
 		e.preventDefault()
 
+		console.log(document)
+
 		try {
 			await createPayment({
-				id: document._id,
+				id: document.id,
 				paidBy: document.customer.name,
 				datePaid,
 				paymentMethod,
@@ -63,7 +65,7 @@ const PaymentForm = ({ document }) => {
 			}).unwrap()
 
 			await updateDoc({
-				id: document._id,
+				id: document.id,
 				totalAmountReceived: Number(totalAmountReceived) + Number(amountPaid),
 				status:
 					Number(totalAmountReceived) + Number(amountPaid) >= document?.total
